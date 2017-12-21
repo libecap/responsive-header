@@ -26,10 +26,10 @@ header {
   text-align: center;
   overflow: hidden;
   background-color: #18294f;
+  color: #fff;
 }
 
 header h1 {
-  color: #fff;
   margin: .9rem;
 }
 
@@ -37,28 +37,31 @@ nav ul {
   list-style-type: none;
   text-align: left;
   padding: 0;
-  margin: .9rem;
+  margin: 0;
+  font-size: 1.125rem;
 }
 
 nav li {
   margin: 0;
 }
 
-nav li a {
+nav a {
   display: block;
   text-decoration: none;
   color: #6c8fe0;
   font-size: 1.125rem;
-  padding:  .5em .75em;
+  padding: .5em .75em;
+  white-space: nowrap;
 }
 
-nav li a:hover {
+nav a:hover {
   display: block;
   color: #fff;
   background-color: #6c8fe0;
   padding: .5em .75em;
 
 }
+
 @media only screen and (min-width: 25em) {
 
   nav ul {
@@ -69,6 +72,7 @@ nav li a:hover {
     display: inline-block;
     width: 50%;
     padding: 0;
+    float: left;
   }
 
 }
@@ -90,7 +94,7 @@ nav li a:hover {
     margin: 0;
   }
 
-  nav li a:hover {
+  nav a:hover {
     width: 100%;
   }
 
@@ -114,11 +118,13 @@ nav li a:hover {
     width: 61%;
     padding-right: .75rem;
   }
+
   nav li {
     width: 24%;
-    padding-top: 7.5%
+    padding-top: 7.5%;
   }
-  nav li a {
+
+  nav a {
     padding: 0;
     width: 24%;
 
